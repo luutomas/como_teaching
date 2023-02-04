@@ -79,8 +79,8 @@ if btn_dostat_data:
         data  = get_stock_data(ticker_name, ticker_start_date)
     elif asset_type == 'Crypto':
         data = get_crypto_data(ticker_name, ticker_start_date)
-st.header("Základní graf")
-st.plotly_chart(simple_visualization(data))
-st.header("Svíčkový graf")
-st.plotly_chart(candlestick_visualization(data))
+    st.header("Základní graf")
+    st.plotly_chart(simple_visualization(data))
+    st.header("Svíčkový graf")
+    st.plotly_chart(candlestick_visualization(data))
 
